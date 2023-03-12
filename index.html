@@ -1,55 +1,90 @@
-<h1> Why Web Dev? </h1>
-<a href="index.html"> Home </a>
-<a href="opportunities.html"> Web Dev Opportunities </a>
-<a href="other-careers.html"> Other Coding Careers </a>
-<p>
-  There are plenty of way to learn coding, but here are some reasons why we focus on web dev.
-</p>
-<ul>
-  <li> You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript. </li>
-  <li> You can be creative with the visual aesthetic of your applications as well as solve problems in coding. </li>
-  <li> You can build useful applications to make money, help others, or just make your own life easier. </li>
-  <li> Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship. </li>
-</ul>
-<img src="html-logo.svg">
-<img src="CSS-logo.svg">
-<img src="JavaScript-logo.svg">
-<style>
-  * {
-    font-family: 'Courier New';
-    background-color: aliceblue;
-  }
-  h1 {
-    text-align: center;
-    text-shadow: 2px 2px skyblue;
-    font-size: 60px;
-    margin-top: 2%;
-  }
-  a {
-    text-decoration: none;
-    color: blue;
-    border: 1px solid blue;
-    border-radius: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    font-size: 17px;
-    background-color: white;
-    padding-top: 0.2%;
-    padding-bottom: 0.2%;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-  }
-  p{
-    font-size: 20px;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-  }
-  ul{
-    font-size: 18px;  
-  }
-  img {
-  width: 5rem;
-  margin-left: 1%;
-  margin-right: 1%;
-  }
-</style>
+<body>
+  <header>
+    <h1>Why Web Dev?</h1>
+  </header>
+  <nav>
+    <a href="index.html"> Home </a>
+    <a href="opportunities.html"> Web Dev Opportunities </a>
+    <a href="other-careers.html"> Other Coding Careers </a>
+  </nav>
+  <main>
+    <p>There are plenty of way to learn coding, but here are some reasons why we focus on web dev.</p>
+    <ul>
+      <li>You can learn to code starting easy, with HTML and CSS, before getting into the real coding with JavaScript.</li>
+      <li>You can be creative with the visual aesthetic of your applications as well as solve problems in coding.</li>
+      <li>You can build useful applications to make money, help others, or just make your own life easier.</li>
+      <li>Web dev has loads of transferrable skills to other areas, from project management to marketing to accounting to entrepeneurship.</li>
+    </ul>
+    <div>
+      <img src="html-logo.svg" />
+      <img src="CSS-logo.svg" />
+      <img src="JavaScript-logo.svg" />
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+
+  <style>
+    body {
+      display: grid;
+      grid:
+        " h   h   h " 3em
+        " .   n   . " auto
+        " .   m   . " auto
+        " f   f   f " 5em
+        / 1fr 5fr 1fr;
+    }
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+    * {
+      font-family: "Courier New";
+      background-color: aliceblue;
+    }
+    h1 {
+      text-align: center;
+      text-shadow: 2px 2px skyblue;
+      font-size: 60px;
+      margin-top: 2%;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+      border: 1px solid blue;
+      border-radius: 0.5em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      font-size: 17px;
+      background-color: white;
+      padding-top: 0.2%;
+      padding-bottom: 0.2%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+    }
+    p {
+      font-size: 20px;
+      padding-top: 1%;
+      padding-bottom: 0.5%;
+    }
+    ul {
+      font-size: 18px;
+    }
+    img {
+      width: 5rem;
+    }
+    div {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</body>
