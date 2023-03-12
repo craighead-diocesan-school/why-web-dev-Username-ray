@@ -29,12 +29,13 @@
     body {
       display: grid;
       grid:
-        " h   h   h " 3em
+        " h   h   h " auto
         " .   n   . " auto
         " .   m   . " auto
-        " f   f   f " 5em
+        " f   f   f " auto
         / 1fr 5fr 1fr;
     }
+
     header {
       grid-area: h;
     }
@@ -80,7 +81,7 @@
       font-size: 18px;
     }
     img {
-      width: 5rem;
+      width: 7rem;
     }
     div {
       display: flex;

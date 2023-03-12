@@ -1,18 +1,45 @@
-<h1>Other Careers </h1>
-<a href="index.html"> Home </a>
-<a href="opportunities.html"> Web Dev Opportunities </a>
-<a href="other-careers.html"> Other Coding Careers </a>
-<style>
+<body>
+  <header>
+    <h1>Other Careers</h1>
+  </header>
+  <nav>
+    <a href="index.html"> Home </a>
+    <a href="opportunities.html"> Web Dev Opportunities </a>
+    <a href="other-careers.html"> Other Coding Careers </a>
+  </nav>
+  <footer>
+    <p>&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+
+  <style>
+    body {
+      display: grid;
+      grid:
+        " h   h   h " auto
+        " .   n   . " auto
+        " f   f   f " auto
+        / 1fr 5fr 1fr;
+    }
+
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    footer {
+      grid-area: f;
+    }
     * {
-      font-family: 'Courier New';
+      font-family: "Courier New";
       background-color: rgb(253, 220, 253);
     }
     h1 {
-    text-align: center;
-    text-shadow: 2px 2px purple;
-    font-size: 60px;
-    margin-top: 2%;
-  }
+      text-align: center;
+      text-shadow: 2px 2px purple;
+      font-size: 60px;
+      margin-top: 2%;
+    }
     a {
       text-decoration: none;
       color: blue;
@@ -27,4 +54,5 @@
       margin-left: 0.5%;
       margin-right: 0.5%;
     }
-</style>
+  </style>
+</body>
